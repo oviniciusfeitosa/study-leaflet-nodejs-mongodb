@@ -13,6 +13,9 @@
 -  sudo apt-get install -y mongodb-org
 -  sudo service mongod start
 
+See:
+- http://localhost:3000/mapjson/points 
+
 ### References:
 - http://deneli.us/a-leaflet-map-with-node-js-and-mongodb/
 - https://mlab.com/
