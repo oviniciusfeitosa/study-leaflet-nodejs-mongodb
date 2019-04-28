@@ -35,4 +35,14 @@ router.get('/maplayers', function (req, res) {
     });
 });
 
+router.get('/map', function(req,res) {
+    Json.find({},{}, function(e,docs){
+        res.render('map', {
+            "jmap" : docs,
+            lat : 40.78854,
+            lng : -73.96374
+        });
+    });
+});
+
 module.exports = router;
