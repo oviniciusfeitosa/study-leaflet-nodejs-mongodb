@@ -8,6 +8,14 @@ mongoose.connect('mongodb://localhost/leaflet_map', { useNewUrlParser: true }, f
     }
 });
 
+var Schema = mongoose.Schema;
+var JsonSchema = new Schema({
+    name: String,
+    type: Schema.Types.Mixed
+});
+
+var Json = mongoose.model('JString', JsonSchema, 'layercollection');
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
