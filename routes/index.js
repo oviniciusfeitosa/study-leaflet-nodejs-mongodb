@@ -29,4 +29,10 @@ router.get('/mapjson/:name', function (req, res) {
     }
 });
 
+router.get('/maplayers', function (req, res) {
+    Json.find({},{'name': 1}, function (err, docs) {
+        res.json(docs);
+    });
+});
+
 module.exports = router;
