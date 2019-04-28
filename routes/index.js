@@ -21,4 +21,12 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
+router.get('/mapjson/:name', function (req, res) {
+    if (req.params.name) {
+        Json.findOne({ name: req.params.name },{}, function (err, docs) {
+            res.json(docs);
+        });
+    }
+});
+
 module.exports = router;
