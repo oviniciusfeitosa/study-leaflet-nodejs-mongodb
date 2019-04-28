@@ -15,6 +15,7 @@
 
 See:
 - http://localhost:3000/mapjson/points 
+- http://localhost:3000/map
 
 ### References:
 - http://deneli.us/a-leaflet-map-with-node-js-and-mongodb/
